@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janazah Mondiale</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <header>
+        <select id="lang-select" onchange="changerLangue(this.value)">
+            <option value="fr">Français</option>
+            <option value="ar">العربية</option>
+            <option value="en">English</option>
+            <option value="tr">Türkçe</option>
+            <option value="ur">Portuguese</option>
+            <option value="bn">বাংলা</option>
+            <option value="id">Bahasa Indonesia</option>
+            <option value="es">Español</option>
+            <option value="ha">Italian</option>
+            <option value="wo">Dutch</option>
+        </select>
+        <h1 id="txt-title">Annonces de Janazah</h1>
+        <p id="txt-desc">Recevez des alertes Janazah dans votre ville.</p>
+    </header>
+
+    <main>
+        <section id="location-setup">
+            <h3 id="txt-setup">Choisissez votre ville</h3>
+            <input type="text" id="user-country" placeholder="Pays (ex: France)">
+            <input type="text" id="user-region" placeholder="Région (ex: Occitanie)">
+            <input type="text" id="user-city" placeholder="Ville (ex: Toulouse)">
+            <button onclick="enregistrerPreferences()" id="btn-save">S'inscrire</button>
+        </section>
+
+        <div id="annonces-list">
+            </div>
+    </main>
+    <script src="publicjava.js"></script>
+</body>
+</html>

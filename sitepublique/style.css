@@ -1,0 +1,80 @@
+/* Design Global */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #000 url('ton-fond-ecran.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+/* Header & Sélecteur de langue */
+header {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#lang-select {
+    padding: 8px;
+    border-radius: 5px;
+    background: #333;
+    color: white;
+    border: 1px solid #00a67d;
+    width: 150px; /* Taille réduite */
+    margin-bottom: 15px;
+}
+
+/* Formulaire de configuration */
+#location-setup {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 90%; /* Pour mobile */
+    width: 400px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box; /* Évite que l'input dépasse */
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #00a67d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #008f6b;
+}
+
+/* Liste des annonces (Cartes) */
+.card {
+    background: rgba(0, 0, 0, 0.8);
+    border-left: 5px solid #00a67d;
+    margin: 15px auto;
+    padding: 15px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+/* Responsive pour très petits écrans */
+@media (max-width: 480px) {
+    h1 { font-size: 1.5rem; }
+    #lang-select { width: 120px; }
+}
