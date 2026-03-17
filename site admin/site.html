@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin - Janazah Mondiale</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 data-key="admin_title">Publier une Janazah</h1>
+        <form id="admin-form">
+            <input type="text" id="mosquee" placeholder="Nom de la Mosquée" required>
+            <input type="text" id="ville" placeholder="Ville" required>
+            <input type="datetime-local" id="date" required>
+            <input type="url" id="maps" placeholder="Lien Google Maps">
+            <button type="submit" data-key="send_btn">Publier mondialement</button>
+        </form>
+    </div>
+    <script src="java.js"></script>
+</body>
+</html>
